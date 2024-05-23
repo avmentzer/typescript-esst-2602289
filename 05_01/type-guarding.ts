@@ -19,6 +19,8 @@ export function Demo() {
 
   if (value instanceof Object) {
     console.log(value.name);
+    console.log(value instanceof Object);
+    
   }
 
   const myObject: { foobar?: { foo: boolean } } = {};

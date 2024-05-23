@@ -11,6 +11,7 @@ export function Demo() {
   const error2: MyEnumErrorCode = MyEnumErrorCode.ERR_199;
   // MyEnumErrorCode.ERR_1 = 3;
   console.log(MyEnumErrorCode);
-}
+  
+  }
 
 Demo();
