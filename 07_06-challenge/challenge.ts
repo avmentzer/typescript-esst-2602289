@@ -6,6 +6,8 @@ const ComplexFunction = () => {
 
 export function Challenge() {
   type ComplexFunctionType = typeof ComplexFunction;
-
-  type ReturnedObjectType = any;
+  type innerFunctionType = ReturnType<ComplexFunctionType>;
+  type innerFunctionReturn = ReturnType<innerFunctionType>
+  type secondType = Exclude<innerFunctionReturn[number], number>;
+  //type ReturnedObjectType = Exclude<secondType, number>;    
 }
